@@ -1,0 +1,55 @@
+[
+  {
+    "name": "bnso-telemetry-frame",
+    "protocol_version": 1,
+    "message_type": 1,
+    "sensor_id": 291,
+    "sequence": 23,
+    "fuel_level_percent_x10": 574,
+    "fuel_volume_l_x10": 3210,
+    "fuel_temp_c_x10": 185,
+    "air_temp_c_x10": 223,
+    "level_state": 1,
+    "quality_flags": 385,
+    "fuel_profile": 2,
+    "calibration_revision": 3
+  },
+  {
+    "name": "app-hello-request",
+    "protocol_version": 1,
+    "message_type": 16,
+    "opcode": 1,
+    "transaction_id": 42,
+    "payload_length": 0
+  },
+  {
+    "name": "app-read-cal-point-response",
+    "protocol_version": 1,
+    "message_type": 17,
+    "opcode": 49,
+    "transaction_id": 53,
+    "status": 0,
+    "payload": {
+      "point_index": 12,
+      "raw_code": 2486,
+      "level_percent_x10": 574,
+      "volume_l_x10": 3210
+    }
+  },
+  {
+    "name": "app-write-event-filters-request",
+    "protocol_version": 1,
+    "message_type": 16,
+    "opcode": 55,
+    "transaction_id": 65,
+    "payload": {
+      "refill_threshold_l_x10": 50,
+      "drain_threshold_l_x10": 40,
+      "refill_confirm_time_s": 8,
+      "drain_confirm_time_s": 12,
+      "stable_filter_tc": 20,
+      "refill_filter_tc": 6,
+      "drain_filter_tc": 10
+    }
+  }
+]

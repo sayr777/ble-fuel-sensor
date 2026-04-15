@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Build outputs
+build/
+dist/
+out/
+Debug/
+Release/
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.bak
+
+# Local app settings
+.claude/
