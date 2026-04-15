@@ -6,12 +6,13 @@
 
 - `protocol_version = 0x01`
 - `message_type = 0x01`
+- `installation_id = 0x01020304`
 - `sensor_id = 0x0123`
 - `tank_id = 0x01`
 - `system_model_revision = 0x01`
 - `sequence = 0x17`
 - `fuel_level_percent_x10 = 574`
-- `fuel_volume_l_x10 = 3210`
+- `volume_l_x10 = 3210`
 - `fuel_temp_c_x10 = 185`
 - `air_temp_c_x10 = 223`
 - `tilt_pitch_deg_x10 = 12`
@@ -26,6 +27,7 @@
 
 Интерпретация:
 
+- пакет относится к машине с `installation_id = 0x01020304`;
 - уровень топлива `57.4%`;
 - объем `321.0 л`;
 - температура топлива `18.5°C`;
