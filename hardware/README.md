@@ -15,8 +15,8 @@
 
 Для первых образцов можно не делать сразу собственную цифровую плату, а использовать одну из готовых:
 
-- `Promicro NRF52840 Development Board Compatible with nice!nano V2.0`
-- `Super 52840 NRF52840 Development Board Compatible with Seeed XIAO BLE`
+- [Promicro NRF52840 Development Board Compatible with nice!nano V2.0](https://www.aliexpress.com/wholesale?SearchText=Promicro+NRF52840+Development+Board+Compatible+with+nice%21nano+V2.0)
+- [Super 52840 NRF52840 Development Board Compatible with Seeed XIAO BLE](https://www.aliexpress.com/wholesale?SearchText=Super+52840+NRF52840+Bluetooth+5.0+Module+Development+Board+Compatible+with+Seeed+XIAO+BLE)
 
 В этом случае аппаратная часть делится на:
 

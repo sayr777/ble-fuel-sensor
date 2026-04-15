@@ -31,8 +31,8 @@
 
 Для быстрого старта можно использовать готовые отладочные платы на `nRF52840`:
 
-- `Promicro NRF52840 Development Board Compatible with nice!nano V2.0` - удобный вариант для сервисной прошивки, USB-отладки и раннего макета;
-- `Super 52840 NRF52840 Bluetooth 5.0 Module Development Board Compatible with Seeed XIAO BLE` - компактный вариант для лабораторного прототипа и проверки компоновки.
+- [Promicro NRF52840 Development Board Compatible with nice!nano V2.0](https://www.aliexpress.com/wholesale?SearchText=Promicro+NRF52840+Development+Board+Compatible+with+nice%21nano+V2.0) - удобный вариант для сервисной прошивки, USB-отладки и раннего макета;
+- [Super 52840 NRF52840 Bluetooth 5.0 Module Development Board Compatible with Seeed XIAO BLE](https://www.aliexpress.com/wholesale?SearchText=Super+52840+NRF52840+Bluetooth+5.0+Module+Development+Board+Compatible+with+Seeed+XIAO+BLE) - компактный вариант для лабораторного прототипа и проверки компоновки.
 
 Для MVP это позволяет вынести разработку прошивки и BLE-обмена вперед, а измерительный емкостной тракт, питание и температурные датчики оформить отдельной платой или макетом. Для серийного изделия позже логично перейти на собственную плату в головной части датчика.
 

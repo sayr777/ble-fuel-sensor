@@ -17,7 +17,7 @@
 
 ## Вариант стенда на прототипах `ProMicro NRF52840`
 
-Для быстрого старта стенд можно собрать без собственной цифровой платы, используя готовые `Promicro NRF52840 Development Board Compatible with nice!nano V2.0`.
+Для быстрого старта стенд можно собрать без собственной цифровой платы, используя готовые [Promicro NRF52840 Development Board Compatible with nice!nano V2.0](https://www.aliexpress.com/wholesale?SearchText=Promicro+NRF52840+Development+Board+Compatible+with+nice%21nano+V2.0).
 
 Рекомендуемая минимальная конфигурация:
 
