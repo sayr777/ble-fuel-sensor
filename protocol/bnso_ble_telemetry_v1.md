@@ -24,18 +24,25 @@
 | 0 | 1 | `protocol_version` |
 | 1 | 1 | `message_type = 0x01` |
 | 2 | 2 | `sensor_id` |
-| 4 | 1 | `sequence` |
-| 5 | 2 | `fuel_level_percent_x10` |
-| 7 | 2 | `fuel_volume_l_x10` |
-| 9 | 2 | `fuel_temp_c_x10` |
-| 11 | 2 | `air_temp_c_x10` |
-| 13 | 1 | `level_state` |
-| 14 | 2 | `quality_flags` |
-| 16 | 1 | `fuel_profile` |
-| 17 | 1 | `calibration_revision` |
-| 18 | 2 | `crc16` |
+| 4 | 1 | `tank_id` |
+| 5 | 1 | `system_model_revision` |
+| 6 | 1 | `sequence` |
+| 7 | 2 | `fuel_level_percent_x10` |
+| 9 | 2 | `fuel_volume_l_x10` |
+| 11 | 2 | `fuel_temp_c_x10` |
+| 13 | 2 | `air_temp_c_x10` |
+| 15 | 2 | `tilt_pitch_deg_x10` |
+| 17 | 2 | `tilt_roll_deg_x10` |
+| 19 | 1 | `level_state` |
+| 20 | 1 | `validity_status` |
+| 21 | 1 | `confidence_percent` |
+| 22 | 2 | `consumer_mask` |
+| 24 | 2 | `quality_flags` |
+| 26 | 1 | `fuel_profile` |
+| 27 | 1 | `calibration_revision` |
+| 28 | 2 | `crc16` |
 
-Итоговая длина прикладной части кадра: `20 байт`.
+Итоговая длина прикладной части кадра: `30 байт`.
 
 ## Алгоритм приема на стороне БНСО
 
@@ -43,9 +50,10 @@
 2. Проверить `protocol_version`.
 3. Проверить `CRC16`.
 4. Найти датчик по `sensor_id`.
-5. Отбросить пакет, если `sequence` совпадает с уже обработанным.
-6. Сохранить телеметрию и время приема.
-7. Передать данные в основной канал телематики.
+5. Сопоставить пакет с конкретным `tank_id`.
+6. Отбросить пакет, если `sequence` совпадает с уже обработанным.
+7. Сохранить телеметрию и время приема.
+8. Передать данные в основной канал телематики.
 
 ## Таймауты и достоверность
 
@@ -57,11 +65,18 @@
 
 - время приема пакета;
 - `sensor_id`;
+- `tank_id`;
+- `system_model_revision`;
 - уровень топлива;
 - объем топлива;
 - температура топлива;
 - температура воздуха;
+- продольный уклон;
+- поперечный уклон;
 - `level_state`;
+- `validity_status`;
+- `confidence_percent`;
+- `consumer_mask`;
 - `quality_flags`;
 - `fuel_profile`;
 - `calibration_revision`.

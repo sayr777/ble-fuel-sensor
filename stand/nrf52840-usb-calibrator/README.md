@@ -29,3 +29,8 @@
 Подробная инструкция по настройке вынесена в:
 
 - [docs/promicro-prototype-stand-setup.md](docs/promicro-prototype-stand-setup.md)
+- [docs/promicro-prototype-test-method.md](docs/promicro-prototype-test-method.md)
+
+Arduino-скетчи для двухплатного прототипа лежат в:
+
+- [firmware/README.md](firmware/README.md)

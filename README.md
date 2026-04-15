@@ -42,6 +42,9 @@
 - [docs/architecture.md](docs/architecture.md) - архитектура изделия и режимы работы
 - [docs/calibration.md](docs/calibration.md) - тарировка, профили топлива и сервис через USB
 - [docs/calibration-model.md](docs/calibration-model.md) - модель тарировочной таблицы и логика доливов/сливов
+- [docs/fuel-system-model.md](docs/fuel-system-model.md) - модель нескольких баков, потребителей и серверной аналитики
+- [docs/fuel-system-profile.md](docs/fuel-system-profile.md) - настройки профиля топливной системы машины
+- [docs/analytics-model.md](docs/analytics-model.md) - управленческая аналитика расхода топлива по режимам работы
 - [docs/protocol.md](docs/protocol.md) - обзор прикладного обмена по BLE
 - [docs/interaction-diagram.md](docs/interaction-diagram.md) - сценарии взаимодействия в mermaid
 - [firmware/README.md](firmware/README.md) - требования к прошивке
@@ -55,6 +58,7 @@
 - [specs/README.md](specs/README.md) - перечень внешних спецификаций и даташитов
 - [stand/nrf52840-usb-calibrator/README.md](stand/nrf52840-usb-calibrator/README.md) - описание стенда тарировки
 - [stand/nrf52840-usb-calibrator/docs/promicro-prototype-stand-setup.md](stand/nrf52840-usb-calibrator/docs/promicro-prototype-stand-setup.md) - настройка стенда на базе прототипов `ProMicro NRF52840`
+- [stand/nrf52840-usb-calibrator/docs/promicro-prototype-test-method.md](stand/nrf52840-usb-calibrator/docs/promicro-prototype-test-method.md) - методика тестирования и проверки двухплатного прототипа
 
 ## Ключевые особенности решения
 
@@ -66,6 +70,7 @@
 - алгоритм подавления шумов и резких выбросов;
 - сервисная настройка без разборки устройства через `USB`;
 - диагностический доступ с Android;
+- управленческая аналитика расхода по движению, технологическому циклу и холостому ходу;
 - интеграция с телематикой и `РНИС`.
 
 ## Следующий этап

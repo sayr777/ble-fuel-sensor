@@ -8,13 +8,21 @@
 typedef struct
 {
     uint8_t protocol_version;
+    uint8_t message_type;
     uint8_t sequence;
     uint16_t sensor_id;
+    uint8_t tank_id;
+    uint8_t system_model_revision;
     uint16_t fuel_level_percent_x10;
     uint16_t fuel_volume_l_x10;
     int16_t fuel_temp_c_x10;
     int16_t air_temp_c_x10;
+    int16_t tilt_pitch_deg_x10;
+    int16_t tilt_roll_deg_x10;
     uint8_t level_state;
+    uint8_t validity_status;
+    uint8_t confidence_percent;
+    uint16_t consumer_mask;
     uint16_t quality_flags;
     uint8_t fuel_profile;
     uint8_t calibration_revision;

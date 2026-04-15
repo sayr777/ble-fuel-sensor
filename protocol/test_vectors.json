@@ -4,12 +4,19 @@
     "protocol_version": 1,
     "message_type": 1,
     "sensor_id": 291,
+    "tank_id": 1,
+    "system_model_revision": 1,
     "sequence": 23,
     "fuel_level_percent_x10": 574,
     "fuel_volume_l_x10": 3210,
     "fuel_temp_c_x10": 185,
     "air_temp_c_x10": 223,
+    "tilt_pitch_deg_x10": 12,
+    "tilt_roll_deg_x10": -4,
     "level_state": 1,
+    "validity_status": 0,
+    "confidence_percent": 95,
+    "consumer_mask": 1,
     "quality_flags": 385,
     "fuel_profile": 2,
     "calibration_revision": 3
@@ -51,5 +58,14 @@
       "refill_filter_tc": 6,
       "drain_filter_tc": 10
     }
+  },
+  {
+    "name": "analytics-shift-summary",
+    "transport_work_fuel_l_x10": 924,
+    "technology_cycle_fuel_l_x10": 317,
+    "idle_fuel_l_x10": 129,
+    "auxiliary_fuel_l_x10": 42,
+    "suspected_drain_fuel_l_x10": 85,
+    "total_shift_consumption_l_x10": 1497
   }
 ]
