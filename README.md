@@ -39,6 +39,7 @@
 ## Структура проекта
 
 - [docs/buyer-solution-specification.md](docs/buyer-solution-specification.md) - пользовательская спецификация решения
+- [docs/buyer-solution-specification-commercial.md](docs/buyer-solution-specification-commercial.md) - коммерческое описание решения для бизнес-заказчика
 - [docs/architecture.md](docs/architecture.md) - архитектура изделия и режимы работы
 - [docs/calibration.md](docs/calibration.md) - тарировка, профили топлива и сервис через USB
 - [docs/calibration-model.md](docs/calibration-model.md) - модель тарировочной таблицы и логика доливов/сливов
